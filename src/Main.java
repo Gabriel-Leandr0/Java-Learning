@@ -34,6 +34,6 @@ public class Main {
         aluno.getDisciplinaList().add(disciplina3);
 
         System.out.println(aluno.getMediaNota());
-
+        
     }
 }
