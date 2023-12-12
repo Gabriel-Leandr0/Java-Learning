@@ -9,7 +9,7 @@ public class Main {
 
         aluno.setNome("Gabriel");
         aluno.setCpf("1232131");
-
+        
         Disciplina disciplina1 = new Disciplina();
         System.out.println("Digite o nome da Disciplina: ");
         disciplina1.setNomeDisciplina(scanner.next());
