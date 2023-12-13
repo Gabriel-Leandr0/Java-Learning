@@ -30,15 +30,35 @@ public class Aluno {
         return Period.between(LocalDate.parse(this.dataNascimento), currentDate).getYears();
     }
 
-    public  double getMediaNota(){
+    public double getMediaNota() {
 
         double somaNotas = 0.00;
 
-        for (Disciplina disciplina : disciplinaList ){
+        for (Disciplina disciplina : disciplinaList) {
             somaNotas += disciplina.getNota();
         }
 
-        return somaNotas/disciplinaList.size();
+        return somaNotas / disciplinaList.size();
     }
 
+    public String getAprovado() {
+        final double mediaNota = this.getMediaNota();
+
+        if (mediaNota >= 50) {
+
+            if (mediaNota >= 70) {
+
+                return "Aluno aprovado";
+            } else {
+
+                return "Aluno em recuperação";
+            }
+
+        } else {
+
+            return "Aluno repovado";
+        }
+
+
+    }
 }
