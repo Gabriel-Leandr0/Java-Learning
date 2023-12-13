@@ -8,8 +8,8 @@ public class Main {
         Aluno aluno = new Aluno();
 
         aluno.setNome("Gabriel");
-        aluno.setCpf("1232131");
-
+        aluno.setDataNascimento("09-09-2000");
+/*
         Disciplina disciplina1 = new Disciplina();
         System.out.println("Digite o nome da Disciplina: ");
         disciplina1.setNomeDisciplina(scanner.next());
@@ -34,6 +34,10 @@ public class Main {
         aluno.getDisciplinaList().add(disciplina3);
 
         System.out.println(aluno.getMediaNota());
-        
+
+*/
+        System.out.println(aluno);
+        System.out.println(aluno.getIdade());
+
     }
 }
