@@ -31,10 +31,13 @@ public class Aluno {
     }
 
     public  double getMediaNota(){
+
         double somaNotas = 0.00;
+
         for (Disciplina disciplina : disciplinaList ){
             somaNotas += disciplina.getNota();
         }
+
         return somaNotas/disciplinaList.size();
     }
 
